@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Собери воспоминания: бип в носик 🧩💖</title>
+<title>Собери пазлы 🧩💖</title>
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
  html, body { min-height: 100%; }
@@ -230,10 +230,10 @@
 <div id="bgOverlay"></div>
 
 <div class="content">
-  <h1>Собери воспоминания 🧩💖</h1>
+  <h1>Собери пазлы 🧩💖</h1>
   <div id="progressBar"><div id="progressFill"></div></div>
   <div id="levelInfo">Уровень 1 из 3</div>
-  <div id="status">Перетаскивай эти хуйни на поле 👇</div>
+  <div id="status">Перетаскивай эти фигни на поле 👇</div>
 
   <div id="board"></div>
   <div id="tray"></div>
@@ -340,7 +340,7 @@ function startLevel(levelIndex) {
   board.style.gridTemplateRows = `repeat(${grid}, 1fr)`;
 
   levelInfo.textContent = `Уровень ${levelIndex + 1} из ${LEVELS.length}: ${grid}×${grid}`;
-  statusEl.textContent = 'Перетаскивай эти хуйни на поле 👇';
+  statusEl.textContent = 'Перетаскивай эти фигни на поле 👇';
   progressFill.style.width = ((levelIndex) / LEVELS.length * 100) + '%';
 
   for (let i = 0; i < totalPieces; i++) {
